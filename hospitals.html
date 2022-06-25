@@ -78,9 +78,9 @@
     <!-- ALA JIDO -->
     
     <!-- navbar -->
-    <nav class="nav w-screen fixed top-0 z-50 border-gray-200 px-2 sm:px-4 py-2.5 rounded 
+    <nav class="nav w-screen fixed z-50 border-gray-200 px-2 sm:px-4 py-2.5 rounded 
       bg-gray-50 dark:bg-gray-800
-        sticky inset-x-0 top-0 z-50">
+        inset-x-0 top-0">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
             <a href="#" class="flex">
                 <img src="./images/Logo.png" class="nav-logo w-12 h-12" alt="">
@@ -209,17 +209,22 @@
                     <ul class=" mx-auto flex flex-col justify-around mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-xl md:font-medium">
                         <li>
                             <a href="#"
-                                class="block py-2 pr-4 pl-3 underline pb-2 text-gray-700 bg-gray-700 rounded md:bg-transparent md:text-gray-400 md:p-0 dark:text-gray-700"
+                                class="block py-2
+                                 pr-4 pl-3 
+                                 pb-2 text-gray-700
+                                 rounded md:bg-transparent 
+                                 md:text-gray-400 md:p-0 
+                                 dark:text-gray-700"
                                 aria-current="page">All</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-200 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
+                                class="block py-2 pr-4 pl-3 text-gray-700  border-gray-100 hover:bg-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-200 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
                                 Approved</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-200 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
+                                class="block py-2 pr-4 pl-3 text-gray-700  border-gray-100 hover:bg-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-200 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
                                Pre Approve </a>
                         </li>
                        
@@ -250,7 +255,7 @@
                     <div class="doctor-info_2 ">
                         <h1 class="text-xl mt-5 font-semibold text-gray-700 capitalize md:text-2xl dark:text-white dark:group-
                         hover:text-gray-400 group-hover:text-white">
-                        murtala muhd kano</h1>
+                        murtala muhd hospital</h1>
                         <!-- map icon -->
                         <h3 class="mt-2 uppercase dark:text-white dark:group-hover:text-gray-400 group-hover:text-white">
                         <i class="fa fa-location-dot" style="color: #0394fc;"></i> kano ng</h3>
@@ -261,11 +266,8 @@
                 </div>
 
                 <div class="">
-                    <span aria-hidden="true" class="absolute top-0 right-0 w-3 h-3 bg-green-500 rounded-full "></span>
-                    <!-- <span class="flex h-3 w-3">
-                        <span class="absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
-                      </span> -->
+                    <!-- <span aria-hidden="true" class="absolute top-0 right-0 w-3 h-3 bg-green-500 rounded-full "></span> -->
+                   
                     <!-- view more button -->
                   <button class="btn flex items-center justify-center w-full px-2 py-1 text-white transition-colors duration-200 transform bg-gradient-to-r from-cyan-500 to-purple-500 rounded-md focus:outline-none sm:w-auto sm:mx-1 hover:bg-blue-500 focus:bg-blue-500 focus:ring focus:ring-gray-900 focus:ring-opacity-40">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -284,7 +286,11 @@
                 <!-- hospital information -->
                 <div class="doctor-info">
                     <!-- hospital's image -->
-                    <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="/images/akth.jpeg" alt="">
+                    <div class="relative ">
+                        <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="/images/MED_IMG_6175c3a55180e_1635107749.jpg" alt="">
+                        <span aria-hidden="true" class="absolute top-2 right-3 w-5 h-5 bg-green-500 rounded-full "></span>
+                    </div>
+                    
                     <!-- hospital's name and position -->
                     <div class="doctor-info_2 ">
                         <h1 class="text-xl mt-5 font-semibold text-gray-700 capitalize md:text-2xl dark:text-white dark:group-
@@ -300,11 +306,7 @@
                 </div>
 
                 <div class="">
-                    <span aria-hidden="true" class="absolute top-0 right-0 w-3 h-3 bg-green-500 rounded-full "></span>
-                    <!-- <span class="flex h-3 w-3">
-                        <span class="absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
-                      </span> -->
+                    <!-- <span aria-hidden="true" class="absolute top-0 right-0 w-3 h-3 bg-green-500 rounded-full "></span> -->
                     <!-- view more button -->
                   <button class="btn flex items-center justify-center w-full px-2 py-1 text-white transition-colors duration-200 transform bg-gradient-to-r from-cyan-500 to-purple-500 rounded-md focus:outline-none sm:w-auto sm:mx-1 hover:bg-blue-500 focus:bg-blue-500 focus:ring focus:ring-gray-900 focus:ring-opacity-40">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -326,8 +328,9 @@
                     <div class="relative ">
                         <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="/images/MED_IMG_6175c3a55180e_1635107749.jpg" alt="">
                         <span aria-hidden="true" class="absolute top-2 right-3 w-5 h-5 bg-red-700 rounded-full "></span>
-    
-                    </div>                    <!-- hospital's name and position -->
+                    </div> 
+
+                    <!-- hospital's name and position -->
                     <div class="doctor-info_2 ">
                         <h1 class="text-xl mt-5 font-semibold text-gray-700 capitalize md:text-2xl dark:text-white dark:group-
                         hover:text-gray-400 group-hover:text-white">
@@ -342,11 +345,8 @@
                 </div>
 
                 <div class="">
-                    <span aria-hidden="true" class="absolute top-0 right-0 w-3 h-3 bg-red-500 rounded-full "></span>
-                    <!-- <span class="flex h-3 w-3">
-                        <span class="absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
-                      </span> -->
+                    <!-- <span aria-hidden="true" class="absolute top-0 right-0 w-3 h-3 bg-red-500 rounded-full "></span> -->
+                   
                     <!-- view more button -->
                   <button class="btn flex items-center justify-center w-full px-2 py-1 text-white transition-colors duration-200 transform bg-gradient-to-r from-cyan-500 to-purple-500 rounded-md focus:outline-none sm:w-auto sm:mx-1 hover:bg-blue-500 focus:bg-blue-500 focus:ring focus:ring-gray-900 focus:ring-opacity-40">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
