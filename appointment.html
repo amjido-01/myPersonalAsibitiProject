@@ -5,396 +5,249 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>appointment</title>
-    <link rel="stylesheet" href="/dist/output.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dist/output.css">
     <style>
+        .wrapper    {
+            margin-top: 10%;
+
+        }
+        .logo{
+            margin-left: auto;
+            margin-right: auto;
+        }
         .nav{
-            margin-bottom: 20px;
-        }
-        .user{
-            width: 40%;
-            display: flex;
-            justify-content: space-between;
-        }
-        .doctor-info{
-            display: flex;
-            justify-content: space-between;
-        }
-        .btn{
-            margin-top: 100px;
+            margin-bottom: 70%;
         }
 
-        @media (max-width: 1200px){
-            .user{
-                display: block;
+        @media (max-width: 1135px) {
+            .wrapper{
+                margin-top: 20%;
             }
-            .doctor-info{
-                display: block;
-                justify-content: center;
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
-                margin-top: 20px;
+        }
+        @media (max-width: 930px) {
+            .wrapper{
+                margin-top: 30%;
             }
-            .doctor-info img{
-                margin-left: auto;
-                margin-right: auto;  
-            }
+        }
 
-            .btn{
-               margin-top: 30px;
-               margin-left: auto;
-               margin-right: auto;
-              
-            }
-        }
-        @media (max-width: 800px){
-            .btn{
-                width: 100%;
-            }
-        }
-        @media (max-width: 1528px){
-            .user{
-                width: 50%;
-            }
-        }
-        @media (max-width: 1056px) {
-            .user{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 65%;
-            }
-           .btn{
-               width: 50%;
-           }
-        }    
+        
     </style>
 </head>
-<body class="bg-gray-50 dark:bg-gray-900">
-   
-
-    <!-- ALA JIDO -->
+<body class="bg-gray-50 dark:bg-gray-900 ">
     
-    <!-- navbar -->
-    <nav class="nav w-screen fixed z-50 border-gray-200 px-2 sm:px-4 py-2.5 rounded 
-      bg-gray-50 dark:bg-gray-800
-        inset-x-0 top-0">
-        <div class="container flex flex-wrap justify-between items-center mx-auto">
-            <a href="#" class="flex">
-                <img src="./images/Logo.png" class="nav-logo w-12 h-12" alt="">
-            </a>
-            <div class="flex items-center md:order-2">
-                <button type="button"
-                    class="flex mr-3 text-xl bg-gray-50 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-blue-500"
-                    id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
-                    <span class="sr-only">Open user menu</span>
-                    <img class="w-12 h-12 rounded-full" src="/images/960aa01cd561d74e66f7c68a189dcb48.jpg" alt="user photo">
-                </button>
 
-                <div class="hidden z-50 my-4 text-base list-none bg-gray-50 rounded divide-y divide-gray-100 shadow dark:bg-gray-900 dark:black "
-                    id="dropdown">
-                    <div class="py-3 px-4">
-                        <span class="block text-xl text-gray-900 dark:text-blue-500">sooraj muhammad</span>
-                        <span
-                            class="block text-xl font-medium mb-3 text-gray-800 truncate dark:text-gray-500">+23482905659</span>
-                    </div>
-                    <ul class="py-1" aria-labelledby="dropdown">
-                        <li>
-                            <a href="profile.html"
-                                class="block py-2 px-4 text-xl text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-500 dark:hover:text-blue-500">Profile</a>
-                        </li>
-                        <li>
-                            <a href="myDrugs.html"
-                                class="block py-2 px-4 text-xl text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-500 dark:hover:text-blue-500">My
-                                drugs</a>
-                        </li>
-                        <li>
-                            <a href="myRecords.html"
-                                class="block py-2 px-4 text-xl text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800  dark:text-gray-500 dark:hover:text-blue-500">My
-                                records</a>
-                        </li>
-                        <li>
-                            <a href="myDrugs.html"
-                                class="block py-2 px-4 text-xl text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-500 dark:hover:text-blue-500">Health
-                                insurance</a>
-                        </li>
-                        <li>
-                            <a href="myDrugs.html"
-                                class="block py-2 px-4 text-xl text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-500 dark:hover:text-blue-500">Wallet</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-4 text-xl text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-500 dark:hover:text-blue-500">Sign
-                                out</a>
-                        </li>
-                    </ul>
-                </div>
-                <button data-collapse-toggle="mobile-menu-2" type="button"
-                    class="inline-flex items-center p-2 ml-1 text-xl text-gray-800 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-200 dark:focus:ring-blue-500"
-                    aria-controls="mobile-menu-2" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                    <svg class="hidden w-6 h-6" fill="currentColor" viewbox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </div>
-            <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
-                <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-xl md:font-medium">
+
+
+
+
+
+     <!-- nav start here  -->
+     <nav class="nav fixed w-full top-0 z-50 px-2 bg-gray-50  border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+        
+        <div class="container cont flex flex-wrap items-center justify-between mx-auto p-3">
+
+
+            <!-- Logo here -->
+            <a href="#" class="flex items-center">
+                <img src="../images/Logo.png" class="h-6 mr-3 sm:h-10" alt="Asitibi Logo">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Asibiti</span>
+            </a>
+
+
+            <!-- Responsivness code with navbar icon-->
+            <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center justify-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500" aria-controls="mobile-menu-2" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+
+
+            <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+                <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                     <li>
-                        <a href="admin-dashboard.html"
-                            class="block py-2 pr-4 pl-3 text-gray-700 bg-gray-500 rounded md:bg-transparent md:text-gray-400 md:p-0 dark:text-gray-700"
-                            aria-current="page">Home</a>
+                        <a href="#" class="block text-gray-700 bg-gray-700 rounded md:bg-transparent md:p-0 dark:text-white text-xl md:p-0 " aria-current="page">Home</a>
                     </li>
+
+
+                    <!-- first nav drop-down for the department-->
                     <li>
-                        <a href="store.html"
-                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-200 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Asibiti
-                            Store</a>
+                        <button id="DepartmentdropdownNav" data-dropdown-toggle="departments" class="flex items-center justify-between w-full font-medium text-xl text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Departments 
+                            <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                        
+                        <div id="departments" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(740.909px, 2413.64px, 0px);">
+                            <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Department registry</a>
+                                </li>
+
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Manage department</a>
+                                </li>
+
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Ward registry</a>
+                                </li>
+
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Manage wards</a>
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+
                     </li>
+
+                    <!-- Second nav drop-down for beds -->
                     <li>
-                        <a href="About.html"
-                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-200 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">About
-                            us</a>
+                        <button id="BeddropdownNavbar" data-dropdown-toggle="beds" class="flex items-center justify-between w-full font-medium text-xl text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Beds
+                            <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                        
+                        <div id="beds" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(740.909px, 2413.64px, 0px);">
+                            <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bed registry</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Manage beds</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Issue bed</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
                     </li>
+
+
+                    <!-- Normal nav links for patients -->
                     <li>
-                        <a href="contact.html"
-                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-200 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Contact
-                            us</a>
+                        <a href="#" class="block items-center justify-between w-full font-medium text-xl text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Patients</a>
                     </li>
+
+                     <!-- Normal nav links for records -->
                     <li>
-                        <a href="#"
-                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-200 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Nearest
-                            Hospital</a>
+                        <a href="#" class="block items-center justify-between w-full font-medium text-xl text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Records</a>
                     </li>
+
+
+                    <!-- Third nav links for blogs -->
+                    <li>
+                        <button id="BlogdropdownNav" data-dropdown-toggle="Blogs" class="flex items-center justify-between w-full font-medium text-xl text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Blog
+                            <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                        
+                        <div id="Blogs" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(740.909px, 2413.64px, 0px);">
+                            <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Create post</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">All blog</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Hospitals feeds</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+
+                    <!-- Forth nav links for staffs -->
+                    <li>
+                        <button id="StaffsdropdownNav" data-dropdown-toggle="staffs" class="flex items-center justify-between w-full pb-2 font-medium text-xl text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Staffs
+                            <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                        
+                        <div id="staffs" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(740.909px, 2413.64px, 0px);">
+                            <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Staff registry</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Manage staffs</a>
+                                </li>
+                            </ul>
+
+
+                        </div>
+
+                    </li>
+
+
+                    
                 </ul>
+
             </div>
+            
         </div>
+        
     </nav>
 
-    <!-- ALA JIDO -->
 
-    <!-- main content -->
-    <div class="container mx-auto ">
 
-        <!-- main content header -->
-        <div class="content-header text-gray-700 dark:text-gray-50 uppercase m-10 ">
-            <h1 class="text-center text-xl">users  7878,7583,0846</h1>
 
-            <!-- search bar -->
-            <form class="flex justify-center">
-                <label for="simple-search" class="sr-only">Search</label>
-                <div class="relative w-80 ">
-                    <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                        <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
-                    </div>
-                    <input type="text" id="simple-search" class="bg-gray-200 w-full border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required="">
-                </div>
-                <button type="submit" class="border-2 p-2.5 ml-2 text-sm font-medium text-white bg-blue-700 rounded-lg border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
-            </form>
+
+
+
+    <!-- Main body wrapper -->
+    <div class="wrapper  flex justify-center p-5">
+            
+        <!-- Form container -->
+        <div class="con w-full max-w-md px-4 py-8  bg-white rounded-lg shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
+
+            <!-- Form logo brand here -->
+            <div class="flex gap-4 item-center ">
+                <img src="./images/Logo.png" class="h-6  sm:h-10 flex  logo " alt="" srcset="">
+            </div>
+
+            <!-- Hospital name here -->
+            <div class="self-center mb-6 text-center mt-4 text-xl font-light text-gray-600 sm:text-2xl dark:text-white">
+                Mallam Aminu Kano (AKTH)
+            </div>
         
-            
-            <!-- short navbar -->
-            <!-- mx-auto border flex justify-center -->
-            <nav class="">
-                <div class="mx-auto " id="">
-                    <ul class=" mx-auto flex flex-col justify-around mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-xl md:font-medium">
-                        <li>
-                            <a href="#"
-                                class="block py-2
-                                 pr-4 pl-3 
-                                 pb-2 text-gray-700
-                                 rounded md:bg-transparent 
-                                 md:text-gray-400 md:p-0 
-                                 dark:text-gray-700"
-                                aria-current="page">All</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pr-4 pl-3 text-gray-700  border-gray-100 hover:bg-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-200 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
-                                Approved</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pr-4 pl-3 text-gray-700  border-gray-100 hover:bg-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-200 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
-                               Pre Approve </a>
-                        </li>
-                       
-                       
-                    </ul>
-                </div>
-            </nav>
-            
-        </div>
-        <!-- main content header end -->
+            <!-- div class for the form body that gives a maegin top of eight -->
+            <div class="mt-8">
 
+                <!-- Form start here -->
+                <form action="#" autoComplete="off">
 
-        <!-- main body content -->
-        <div class="body-content">
-
-            <!-- hospital one -->
-            <div class="my-5 px-12 py-8 user mx-auto rounded-xl group transition-colors duration-200 transform border bg-gray-300 dark:bg-gray-800 hover:text-black hover:border-transparent group hover:bg-gray-500 dark:hover:bg-gray-700 dark:border-gray-700 dark:hover:border-transparent">
-                <!-- hospital information -->
-                <div class="doctor-info">
-                    <!-- hospital's image -->
-                    <div class="relative ">
-                        <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="/images/akth.jpeg" alt="">
-                        <span aria-hidden="true" class="absolute top-2 right-3 w-5 h-5 border bg-green-500 rounded-full "></span>
-    
-                    </div>
-
-                    <!-- hospital's name and position -->
-                    <div class="doctor-info_2 ">
-                        <h1 class="text-xl mt-5 font-semibold text-gray-700 capitalize md:text-2xl dark:text-white dark:group-
-                        hover:text-gray-400 group-hover:text-white">
-                        murtala muhd hospital</h1>
-                        <!-- map icon -->
-                        <h3 class="mt-2 uppercase dark:text-white dark:group-hover:text-gray-400 group-hover:text-white">
-                        <i class="fa fa-location-dot" style="color: #0394fc;"></i> kano ng</h3>
-                        <!-- telephone icon -->
-                        <p class="capitalize dark:text-white dark:group-hover:text-gray-400 group-hover:text-white">
-                        <i class="fa fa-phone"></i>    06757 7990 466</p>
-                    </div>
-                </div>
-
-                <div class="">
-                    <!-- <span aria-hidden="true" class="absolute top-0 right-0 w-3 h-3 bg-green-500 rounded-full "></span> -->
-                   
-                    <!-- view more button -->
-                  <button class="transition 
-                   ease-in-out 
-                   delay-150 
-                  
-                   hover:-translate-y-1 
-                   hover:scale-110 
-                  
-                   duration-700
-                    btn flex items-center justify-center w-full px-2 py-1 text-white transform bg-gradient-to-r from-cyan-500 to-purple-500 rounded-md focus:outline-none sm:w-auto sm:mx-1 hover:bg-blue-500 focus:bg-blue-500 focus:ring focus:ring-gray-900 focus:ring-opacity-40">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                    </svg>
-                    <span class="mx-1">
-                        View
-                    </span>
-                    </button>
-
-                </div>
-            </div>
-            <!-- hospital one -->
-            <div class="my-5 px-12 py-8 user mx-auto rounded-xl group transition-colors duration-200 transform border bg-gray-300 dark:bg-gray-800 hover:text-black hover:border-transparent group hover:bg-gray-500 dark:hover:bg-gray-700 dark:border-gray-700 dark:hover:border-transparent">
-                <!-- hospital information -->
-                <div class="doctor-info">
-                    <!-- hospital's image -->
-                    <div class="relative ">
-                        <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="/images/MED_IMG_6175c3a55180e_1635107749.jpg" alt="">
-                        <span aria-hidden="true" class="absolute top-2 right-3 w-5 h-5 border bg-green-500 rounded-full "></span>
-                    </div>
                     
-                    <!-- hospital's name and position -->
-                    <div class="doctor-info_2 ">
-                        <h1 class="text-xl mt-5 font-semibold text-gray-700 capitalize md:text-2xl dark:text-white dark:group-
-                        hover:text-gray-400 group-hover:text-white">
-                        Abubakar Imam</h1>
-                        <!-- map icon -->
-                        <h3 class="mt-2 uppercase dark:text-white dark:group-hover:text-gray-400 group-hover:text-white">
-                        <i class="fa fa-location-dot" style="color: #0394fc;"></i> kano ng</h3>
-                        <!-- telephone icon -->
-                        <p class="capitalize dark:text-white dark:group-hover:text-gray-400 group-hover:text-white">
-                        <i class="fa fa-phone"></i>    06757 7990 466</p>
+                    <!-- First input for the hospital id -->
+                    <div class="my-10">
+                        <label for="date" class="block mb-2 text-sm font-medium cursor-pointer text-gray-900 dark:text-gray-300">Date *</label>
+                        <input type="date" name="deptName" id="date" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:borderlue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Hospital Id" required="">
                     </div>
-                </div>
 
-                <div class="">
-                    <!-- <span aria-hidden="true" class="absolute top-0 right-0 w-3 h-3 bg-green-500 rounded-full "></span> -->
-                    <!-- view more button -->
-                  <button class="transition 
-                  ease-in-out 
-                  delay-150 
-                  
-                  hover:-translate-y-1 
-                  hover:scale-110 
-                  
-                  duration-700
-                    btn flex items-center justify-center w-full px-2 py-1 text-white transform bg-gradient-to-r from-cyan-500 to-purple-500 rounded-md focus:outline-none sm:w-auto sm:mx-1 hover:bg-blue-500 focus:bg-blue-500 focus:ring focus:ring-gray-900 focus:ring-opacity-40">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                    </svg>
-                    <span class="mx-1">
-                        View
-                    </span>
-                    </button>
 
-                </div>
-            </div>
-            <!-- hospital one -->
-            <div class="my-5 px-12 py-8 user mx-auto rounded-xl group transition-colors duration-200 transform border bg-gray-300 dark:bg-gray-800 hover:text-black hover:border-transparent group hover:bg-gray-500 dark:hover:bg-gray-700 dark:border-gray-700 dark:hover:border-transparent">
-                <!-- hospital information -->
-                <div class="doctor-info">
-                    <!-- hospital's image -->
-                    <div class="relative ">
-                        <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="/images/MED_IMG_6175c3a55180e_1635107749.jpg" alt="">
-                        <span aria-hidden="true" class="absolute top-2 right-3 w-5 h-5 bg-red-700 border border-gray-300 rounded-full "></span>
-                    </div> 
 
-                    <!-- hospital's name and position -->
-                    <div class="doctor-info_2 ">
-                        <h1 class="text-xl mt-5 font-semibold text-gray-700 capitalize md:text-2xl dark:text-white dark:group-
-                        hover:text-gray-400 group-hover:text-white">
-                        aminu kano (AKTH)</h1>
-                        <!-- map icon -->
-                        <h3 class="mt-2 uppercase dark:text-white dark:group-hover:text-gray-400 group-hover:text-white">
-                        <i class="fa fa-location-dot" style="color: #0394fc;"></i> kano ng</h3>
-                        <!-- telephone icon -->
-                        <p class="capitalize dark:text-white dark:group-hover:text-gray-400 group-hover:text-white">
-                        <i class="fa fa-phone"></i>    06757 7990 466</p>
+                    <!-- Log in botton here-->
+                    <div class="flex w-full mb-5">
+                        <button type="submit" class="py-2 px-4 bg-gradient-to-r from-cyan-500 to-purple-500 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                            Submit
+                        </button>
                     </div>
-                </div>
+                </form>
 
-                <div class="">
-                    <!-- <span aria-hidden="true" class="absolute top-0 right-0 w-3 h-3 bg-red-500 rounded-full "></span> -->
-                   
-                    <!-- view more button -->
-                  <button class="transition 
-                  ease-in-out 
-                  delay-150 
-                  
-                  hover:-translate-y-1 
-                  hover:scale-110 
-                  
-                  duration-700
-                   btn flex items-center justify-center w-full px-2 py-1 text-white home transform bg-gradient-to-r from-cyan-500 to-purple-500 rounded-md focus:outline-none sm:w-auto sm:mx-1 hover:bg-blue-500 focus:bg-blue-500 focus:ring focus:ring-gray-900 focus:ring-opacity-40">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                    </svg>
-                    <span class="mx-1">
-                        View
-                    </span>
-                    </button>
-
-                </div>
             </div>
-            <!-- hospital one end -->
+
 
         </div>
-
-
-       
 
     </div>
-    
+
+
+
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/tailwind.js"></script>
     <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/custom.js"></script>
 </body>
 </html>
