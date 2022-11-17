@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hospital-login</title>
+    <title>Login | Asibiti</title>
     <link rel="stylesheet" href="./dist/output.css">
     <style>
         .wrapper    {
@@ -196,23 +196,31 @@
 
 
     <!-- Main body wrapper -->
-    <div class="wrapper  flex justify-center p-5">
+    <div class="wrapper flex justify-center p-5 ">
             
-        <!-- Form container -->
-        <div class="con w-full max-w-md px-4 py-8  bg-white rounded-lg shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
-
-            <!-- Form logo brand here -->
-            <div class="flex gap-4 item-center ">
-                <img src="./images/Logo.png" class="h-6  sm:h-10 flex  logo " alt="" srcset="">
+        <div class="hidden w-[50%] md:flex items-center justify-end">
+            
+            <div class="w-[30%]">
+                <img src="images/Logo.png" class="water-mark" alt="">
             </div>
 
+            <div class="w-[45%] ">
+                <p class="text-4xl ml-2 text-gray-700 dark:text-gray-400 dark:gray-100 water-mark-text">Asibiti helps you keep and access your medical record every time, every where </p>
+            </div>
+        </div>
+
+
+        <!-- Form container -->
+        <div class="w-full md:w-[50%] max-w-md px-4 ml-4 pb-20 pt-28 bg-white rounded-lg dark:bg-gray-800 shadow-lg sm:px-6 md:px-8 lg:px-10">
+
+
             <!-- Hospital name here -->
-            <div class="self-center mb-6  text-xl font-light text-gray-600 sm:text-2xl dark:text-white">
-                Hospital Login
+            <div class="self-center mb-6 text-center text-xl font-light sm:text-2xl text-gray-700 dark:text-gray-400">
+                Sign In
             </div>
         
             <!-- div class for the form body that gives a maegin top of eight -->
-            <div class="mt-8">
+            <div class="mt-8 ">
 
                 <!-- Form start here -->
                 <form action="#" autoComplete="off">
@@ -220,14 +228,14 @@
                     
                     <!-- First input for the hospital id -->
                     <div class="mt-3 mb-3">
-                        <label for="deptName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Hospital Id *</label>
-                        <input type="text" name="deptName" id="deptName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:borderlue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Hospital Id" required="">
+                        <label for="phone" class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-400">ID or Phone Number</label>
+                        <input type="text" name="phone" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:borderlue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required="">
                     </div>
                        
                     <!-- Second input for the password -->
                     <div class="mt-3 mb-3">
-                        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Password *</label>
-                        <input type="password" name="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:borderlue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Password" required="">
+                        <label for="password" class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-400">Password</label>
+                        <input type="password" name="pwd" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:borderlue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required="">
                     </div>
 
                     <!-- Link for forget password -->
@@ -235,7 +243,7 @@
                     <div class="flex items-center mt-3 mb-3">
                         <div class="flex ml-auto">
                             <a href="#" class="inline-flex text-xs font-thin text-gray-500 sm:text-sm dark:text-gray-100 hover:text-gray-700 dark:hover:text-white">
-                                Reset Password? and join.
+                                Forgot Password?
                             </a>
                         </div>
                     </div>

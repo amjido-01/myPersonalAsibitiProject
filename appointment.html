@@ -34,12 +34,6 @@
     </style>
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 ">
-    
-
-
-
-
-
 
      <!-- nav start here  -->
      <nav class="nav fixed w-full top-0 z-50 px-2 bg-gray-50  border-gray-200 dark:bg-gray-800 dark:border-gray-700">
@@ -65,7 +59,7 @@
             <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
                 <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                     <li>
-                        <a href="#" class="block text-gray-700 bg-gray-700 rounded md:bg-transparent md:p-0 dark:text-white text-xl md:p-0 " aria-current="page">Home</a>
+                        <a href="#" class="block text-gray-700 bg-gray-700 rounded md:bg-transparent md:p-0 dark:text-white text-xl" aria-current="page">Home</a>
                     </li>
 
 
@@ -174,12 +168,9 @@
                                 </li>
                             </ul>
 
-
                         </div>
 
                     </li>
-
-
                     
                 </ul>
 
@@ -188,10 +179,6 @@
         </div>
         
     </nav>
-
-
-
-
 
 
 
@@ -218,16 +205,27 @@
                 <form action="#" autoComplete="off">
 
                     
-                    <!-- First input for the hospital id -->
-                    <div class="my-10">
+                    <!-- Date input for hospital appointment date -->
+                    <div class="my-8">
+                        <label for="select-doctor" class="block mb-2 text-sm font-medium cursor-pointer text-gray-900 dark:text-gray-300">Select A Doctor *</label>
+                        <select name="doctors" id="select-doctor" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:borderlue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">
+                            <option value="">--Please select a Doctor--</option>
+                            <option value="Dr Ibrahim">Dr Ibrahim</option>
+                            <option value="Dr Suraj">Dr Suraj</option>
+                            <option value="Dr Ala">Dr Ala</option>
+                            <option value="Dr Alamin">Dr Alamin</option>
+                        </select>
+                        <!-- <input type="date" name="deptName" id="date" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:borderlue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Hospital Id" required=""> -->
+                    </div>
+
+                    <div class="my-8">
                         <label for="date" class="block mb-2 text-sm font-medium cursor-pointer text-gray-900 dark:text-gray-300">Date *</label>
                         <input type="date" name="deptName" id="date" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:borderlue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Hospital Id" required="">
                     </div>
 
 
-
-                    <!-- Log in botton here-->
-                    <div class="flex w-full mb-5">
+                    <!-- Submit botton here-->
+                    <div class="flex w-full my-8">
                         <button type="submit" class="py-2 px-4 bg-gradient-to-r from-cyan-500 to-purple-500 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
                             Submit
                         </button>
@@ -235,7 +233,6 @@
                 </form>
 
             </div>
-
 
         </div>
 
