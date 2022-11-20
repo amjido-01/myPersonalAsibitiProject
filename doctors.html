@@ -11,12 +11,15 @@
 
     <style>
         .nav{
-            margin-bottom: 20px;
+            margin-bottom: 100px;
         }
         .user{
             width: 40%;
             display: flex;
             justify-content: space-between;
+        }
+        .amount {
+            margin-top: 100px;
         }
         .doctor-info{
             display: flex;
@@ -73,10 +76,10 @@
         }    
     </style>
 </head>
-<body class="bg-gray-50 dark:bg-gray-900">
+<body class="bg-gray-50 dark:bg-gray-900 bor">
     
     <!-- navbar -->
-    <nav class="nav w-screen fixed  border-gray-200 px-2 sm:px-4 py-2.5 rounded 
+    <nav class="nav w-screen fixed border-gray-200 px-2 sm:px-4 py-2.5 rounded 
        bg-gray-50 dark:bg-gray-800
         inset-x-0 top-0 z-50">
            <div class="container flex flex-wrap justify-between items-center mx-auto">
@@ -88,7 +91,7 @@
                        class="flex mr-3 text-xl bg-gray-50 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-blue-500"
                        id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
                        <span class="sr-only">Open user menu</span>
-                       <img class="w-12 h-12 rounded-full" src="./images/male-avatar.jpg" alt="user photo">
+                       <img class="w-12 h-12 rounded-full" src="./images/male-avarta.jpg" alt="user photo">
                    </button>
    
                    <div class="hidden z-50 my-4 text-base list-none bg-gray-50 rounded divide-y divide-gray-100 shadow dark:bg-gray-900 dark:black "
@@ -151,7 +154,8 @@
                        <li>
                            <a href="admin-dashboard.html"
                                class="block py-2 pr-4 pl-3 text-gray-700 bg-gray-500 rounded md:bg-transparent md:text-gray-400 md:p-0 dark:text-gray-700"
-                               aria-current="page">Home</a>
+                               aria-current="page">Home
+                            </a>
                        </li>
                        <li>
                            <a href="store.html"
@@ -180,12 +184,13 @@
 
     <!-- ALA JIDO -->
    
-        <div class="container border">
+        <div class="container">
 
             <!-- main content header -->
             
             <div class="content-header text-gray-50 uppercase m-10">
-                <h1 class="text-center text-xl my-4">doctors  7878,7583,0846</h1>
+
+                <h1 class="text-center text-xl mt-[50%] amount">doctors  7878,7583,0846</h1>
 
                 <!-- the search button -->
                 <form class="flex justify-center">
