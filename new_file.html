@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_motivation</title>
+    <style>
+        :root {
+            --main-bg-color: rgb(238, 130, 238);
+            --mini-bg-color: rgb(238, 156, 238);
+            --micro-bg-color: rgb(241, 178, 241);
+            --main-width: 400px;
+            --main-hight: 300px;
+            --mini-width: 200px;
+            --mini-hight: 150px;
+           /* --micro-width: 220px;
+            --micro-hight: 220px; */
+           /* --micro-size: 120px; */
+        }
+          
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid gray;
+        }
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--main-bg-color);
+            width: var(--main-width);
+            height: var(--main-hight);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .inside {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: var(--mini-width);
+            height: var(--mini-hight);
+            background-color: var(--mini-bg-color);
+            border: 1px solid green;
+        }
+        .inner {
+            width: var(--micro-size);
+            height: var(--micro-size);
+            background-color: var(--micro-bg-color);
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto">
+        <div class="card mx-auto">
+            <div class="inside">
+                <div class="inner"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
