@@ -11,17 +11,18 @@
             --mini-bg-color: rgb(238, 156, 238);
             --micro-bg-color: rgb(241, 178, 241);
             --main-width: 400px;
-            --main-hight: 300px;
-            --mini-width: 300px;
-            --mini-hight: 200px;
-            --micro-width: 200px;
-            --micro-hight: 100px; 
+            --main-hight: 400px;
+            --mini-width: 320px;
+            --mini-hight: 320px;
+            --micro-width: 220px;
+            --micro-hight: 220px; 
            /* --micro-size: 120px; */
         }
           
         .container {
             margin-left: auto;
             margin-right: auto;
+            margin-top: 10%;
             border: 1px solid gray;
         }
         .card {
@@ -33,6 +34,7 @@
             height: var(--main-hight);
             margin-left: auto;
             margin-right: auto;
+            box-shadow:  3px 3px 4px rgba(0, 0, 0, .5);
         }
         .inside {
             position: absolute;
@@ -43,17 +45,17 @@
             width: var(--mini-width);
             height: var(--mini-hight);
             background-color: var(--mini-bg-color);
-            border: 1px solid green;
+            box-shadow:  3px 3px 4px rgba(0, 0, 0, .5);
 
         }
 
         .inner {
             position: relative;
             z-index: 20;
-            border: 1px solid gray;
             width: var(--micro-width);
             height: var(--micro-hight);
             background-color: var(--micro-bg-color);
+            box-shadow:  3px 3px 4px rgba(0, 0, 0, .5);
         }
         
     </style>
@@ -62,7 +64,9 @@
     <div class="container mx-auto">
         <div class="card mx-auto">
             <div class="inside">
-                <div class="inner"></div>
+                <div class="inner">
+                    
+                </div>
             </div>
         </div>
     </div>
