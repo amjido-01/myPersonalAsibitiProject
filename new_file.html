@@ -35,6 +35,8 @@
             margin-right: auto;
         }
         .inside {
+            position: absolute;
+            z-index: 10;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -42,10 +44,12 @@
             height: var(--mini-hight);
             background-color: var(--mini-bg-color);
             border: 1px solid green;
-            
+
         }
 
         .inner {
+            position: relative;
+            z-index: 20;
             border: 1px solid gray;
             width: var(--micro-width);
             height: var(--micro-hight);
