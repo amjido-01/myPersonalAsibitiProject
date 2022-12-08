@@ -10,11 +10,11 @@
             --main-bg-color: rgb(238, 130, 238);
             --mini-bg-color: rgb(238, 156, 238);
             --micro-bg-color: rgb(241, 178, 241);
-            --main-width: 400px;
+            --main-width: 450px;
             --main-hight: 400px;
-            --mini-width: 320px;
+            --mini-width: 350px;
             --mini-hight: 320px;
-            --micro-width: 220px;
+            --micro-width: 250px;
             --micro-hight: 220px; 
            /* --micro-size: 120px; */
         }
@@ -37,7 +37,7 @@
             box-shadow:  3px 3px 4px rgba(0, 0, 0, .5);
         }
         .inside {
-            position: absolute;
+            position: relative;
             z-index: 10;
             display: flex;
             justify-content: center;
@@ -49,13 +49,36 @@
 
         }
 
+        .inside img {
+            position: absolute;
+            width: 30%;
+            bottom: 0;
+            left: -10px;
+        }
+
         .inner {
-            position: relative;
+            position: absolute;
             z-index: 20;
+            padding-left: 5px;
+            padding-right: 5px;
             width: var(--micro-width);
             height: var(--micro-hight);
             background-color: var(--micro-bg-color);
             box-shadow:  3px 3px 4px rgba(0, 0, 0, .5);
+        }
+        .inner p {
+            font-size: 18px;
+            text-align: center;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .inner .qoute {
+            border: 1px solid black;
+            margin-top: 70px;
+        }
+
+        .inner .autor {
         }
         
     </style>
@@ -64,8 +87,10 @@
     <div class="container mx-auto">
         <div class="card mx-auto">
             <div class="inside">
+                <img src="./images/male-nurse.png" alt="" srcset="">
                 <div class="inner">
-                    
+                    <p class="qoute">"We hustle not to compete with our friends, but to change home current situation"</p>
+                    <p class="autor">_unknown 2022</p>
                 </div>
             </div>
         </div>
