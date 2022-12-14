@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>files</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="shortcut icon" href="./images/logo2.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="js/tailwind.js"></script>
+    <link rel="stylesheet" href="css/tailwind.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer"/>
+    <style>
+        .nav{
+            margin-bottom: 150px;
+        }
+        .user{
+            width: 25%;
+            justify-content: center;
+        }
+
+        .doctor-info{
+            /*display: flex;*/
+            justify-content: space-between;
+        }
+        .doctor-info img{
+            margin-left: auto;
+            margin-right: auto; 
+        }
+       
+        @media (max-width: 768px) {
+            .user {
+                margin-left: auto/* 8px */;
+                margin-right: auto/* 8px */;
+            }
+        }
+
+        @media (max-width: 1200px){
+            .user{
+                display: block;
+            }
+            .doctor-info{
+                display: block;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+            .doctor-info img{
+                margin-left: auto;
+                margin-right: auto; 
+            }
+
+            .btn{
+               margin-left: auto;
+               margin-right: auto;
+            }
+        }
+        @media (max-width: 800px){
+            .btn{
+                width: 100%;
+            }
+        }
+        @media (max-width: 1528px){
+            .user{
+                width: 50%; 
+            }
+        }
+        @media (max-width: 1056px) {
+            .user{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 65%;
+            }
+           .btn{
+               width: 50%;
+           }
+        }  
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+    <div class="wrapper">
+
+   <!-- navbar -->
+   <nav class="nav w-screen fixed border-gray-200 px-2 sm:px-4 py-2.5 rounded 
+   bg-gray-50 dark:bg-gray-800 dark:shadow-lg shadow-md
+    inset-x-0 top-0 z-50">
+       <div class="container flex flex-wrap justify-between items-center mx-auto">
+           <a href="#" class="flex">
+               <img src="../images/Logo.png" class="nav-logo w-12 h-12" alt="">
+           </a>
+           <div class="flex items-center md:order-2">
+               <button type="button"
+                   class="flex mr-3 text-xl bg-gray-50 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-blue-500"
+                   id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
+                   <span class="sr-only">Open user menu</span>
+                   <img class="w-12 h-12 rounded-full" src="../images/male-avatar.jpg" alt="user photo">
+               </button>
+
+               <div class="hidden z-50 my-4 text-base list-none bg-gray-50 rounded divide-y divide-gray-100 shadow dark:bg-gray-900 dark:black "
+                   id="dropdown">
+                   <div class="py-3 px-4">
+                       <span class="block text-xl text-gray-900 dark:text-blue-500">sooraj muhammad</span>
+                       <span
+                           class="block text-xl font-medium mb-3 text-gray-800 truncate dark:text-gray-500">+23482905659</span>
+                   </div>
+                   <ul class="py-1" aria-labelledby="dropdown">
+                       <li>
+                           <a href="profile.html"
+                               class="block py-2 px-4 text-xl text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-500 dark:hover:text-blue-500">Profile</a>
+                       </li>
+                       <li>
+                           <a href="myDrugs.html"
+                               class="block py-2 px-4 text-xl text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-500 dark:hover:text-blue-500">My
+                               drugs</a>
+                       </li>
+                       <li>
+                           <a href="myRecords.html"
+                               class="block py-2 px-4 text-xl text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800  dark:text-gray-500 dark:hover:text-blue-500">My
+                               records</a>
+                       </li>
+                       <li>
+                           <a href="myDrugs.html"
+                               class="block py-2 px-4 text-xl text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-500 dark:hover:text-blue-500">Health
+                               insurance</a>
+                       </li>
+                       <li>
+                           <a href="myDrugs.html"
+                               class="block py-2 px-4 text-xl text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-500 dark:hover:text-blue-500">Wallet</a>
+                       </li>
+                       <li>
+                           <a href="#"
+                               class="block py-2 px-4 text-xl text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-500 dark:hover:text-blue-500">Sign
+                               out</a>
+                       </li>
+                   </ul>
+               </div>
+               <button data-collapse-toggle="mobile-menu-2" type="button"
+                   class="inline-flex items-center p-2 ml-1 text-xl text-gray-800 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-200 dark:focus:ring-blue-500"
+                   aria-controls="mobile-menu-2" aria-expanded="false">
+                   <span class="sr-only">Open main menu</span>
+                   <svg class="w-6 h-6" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                       <path fill-rule="evenodd"
+                           d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                           clip-rule="evenodd"></path>
+                   </svg>
+                   <svg class="hidden w-6 h-6" fill="currentColor" viewbox="0 0 20 20"
+                       xmlns="http://www.w3.org/2000/svg">
+                       <path fill-rule="evenodd"
+                           d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                           clip-rule="evenodd"></path>
+                   </svg>
+               </button>
+           </div>
+           <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
+               <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-xl md:font-medium">
+                   <li>
+                       <a href="admin-dashboard.html"
+                           class="block py-2 pr-4 pl-3 text-gray-700 bg-gray-500 rounded md:bg-transparent md:text-gray-400 md:p-0 dark:text-gray-700"
+                           aria-current="page">Home
+                        </a>
+                   </li>
+                   <li>
+                       <a href="store.html"
+                           class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-200 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Asibiti
+                           Store</a>
+                   </li>
+                   <li>
+                       <a href="About.html"
+                           class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-200 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">About
+                           us</a>
+                   </li>
+                   <li>
+                       <a href="contact.html"
+                           class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-200 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Contact
+                           us</a>
+                   </li>
+                   <li>
+                       <a href="#"
+                           class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-200 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Nearest
+                           Hospital</a>
+                   </li>
+               </ul>
+           </div>
+       </div>
+    </nav>
+
+<!-- ALA JIDO -->
+
+    <div class="container">
+
+        <div class="content-header mt-24 md:mt-40 text-gray-50 uppercase m-10">
+            <!-- the search button -->
+            <form class="flex justify-center">
+                <label for="simple-search" class="sr-only">Search</label>
+                <div class="relative w-80 ">
+                    <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                        <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <input type="text" id="simple-search" class="bg-gray-200 w-full border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required="">
+                </div>
+                <button type="submit" class="border-2 p-2.5 ml-2 text-sm font-medium text-white bg-blue-700 rounded-lg border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+            </form>
+        </div>
+        <!-- main content header end -->
+
+        <div class="body-content block md:flex md:justify-center">
+
+            <!-- card one -->
+            <div class="my-5 px-12 py-8 user md:mx-2 rounded-xl group transition-colors duration-200 transform bg-gray-300 dark:bg-gray-800 hover:text-black hover:border-transparent group dark:hover:border-transparent">
+                <!-- card information -->
+                <div class="doctor-info ">
+                    <!-- card image -->
+                    <img class="flex-shrink-0 text-center object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="../assets/img/male-avatar.jpg" alt="">
+                    <!-- name, hospital and phone -->
+                    <div class="doctor-info_2 text-center">
+                        <h1 class="text-xl mt-2 font-semibold text-gray-700 capitalize md:text-2xl dark:text-white">Farex</h1>
+                        <h3 class="mt-2 uppercase dark:text-white">ASB/NG/KN</h3>
+                        <p class="capitalize dark:text-white">+234 811 452 8984</p>
+                    </div>
+                </div>
+
+                <div class="mt-1  flex justify-center">
+                    <!-- view more button -->
+                <button onclick="window.location.href='prescription-detail.html'" class="transition 
+                    ease-in-out 
+                    delay-150 
+                    hover:-translate-y-1 
+                    hover:scale-110 
+                    duration-700
+                    btn flex items-center justify-center  px-2 py-1 text-white transform bg-gradient-to-r from-cyan-500 to-purple-500 rounded-md focus:outline-none sm:w-auto sm:mx-1 hover:bg-blue-500 focus:bg-blue-500 focus:ring focus:ring-gray-900 focus:ring-opacity-40">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                    <span class="mx-1">
+                        View
+                    </span>
+                    </button>
+
+                </div>
+            </div>
+            <!-- card one end -->
+
+            <!-- two card  -->
+            <div class="my-5 px-12 py-8 user md:mx-2 rounded-xl group transition-colors duration-200 transform bg-gray-300 dark:bg-gray-800 hover:text-black hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent">
+                <!-- card information -->
+                <div class="doctor-info">
+                    <!-- card image -->
+                    <img class="flex-shrink-0 text-center object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="../assets/img/male-avatar.jpg" alt="">
+                    <!-- card name, hospital and phone -->
+                    <div class="doctor-info_2 text-center">
+                        <h1 class="text-xl mt-2 font-semibold text-gray-700 capitalize md:text-2xl dark:text-white">Farex</h1>
+                        <h3 class="mt-2 uppercase dark:text-white">ASB/NG/KN</h3>
+                        <p class="capitalize dark:text-white">+234 811 452 8984</p>
+                    </div>
+                </div>
+
+                <div class="mt-1 flex justify-center">
+                    <!-- view more button -->
+                <button onclick="window.location.href='prescription-detail.html'" class="transition 
+                    ease-in-out 
+                    delay-150 
+                    hover:-translate-y-1 
+                    hover:scale-110 
+                    duration-700
+                    btn flex items-center justify-center  px-2 py-1 text-white transform bg-gradient-to-r from-cyan-500 to-purple-500 rounded-md focus:outline-none sm:w-auto sm:mx-1 hover:bg-blue-500 focus:bg-blue-500 focus:ring focus:ring-gray-900 focus:ring-opacity-40">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                    <span class="mx-1">
+                        View
+                    </span>
+                    </button>
+
+                </div>
+            </div>
+            <!-- card two end -->
+
+            <!-- card three -->
+            <div class="my-5 px-12 py-8 user md:mx-2 rounded-xl group transition-colors duration-200 transform bg-gray-300 dark:bg-gray-800 hover:text-black hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent">
+                <!-- card information -->
+                <div class="doctor-info">
+                    <!-- card image -->
+                    <img class="flex-shrink-0 text-center object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="../assets/img/male-avatar.jpg" alt="">
+                    <!-- card name, hospital and phone-->
+                    <div class="doctor-info_2 text-center">
+                        <h1 class="text-xl mt-2 font-semibold text-gray-700 capitalize md:text-2xl dark:text-white">Farex</h1>
+                        <h3 class="mt-2 uppercase dark:text-white">ASB/NG/KN</h3>
+                        <p class="capitalize dark:text-white">+234 811 452 8984</p>
+                    </div>
+                </div>
+
+                <div class="mt-1 flex justify-center">
+                    <!-- view more button -->
+                <button onclick="window.location.href='prescription-detail.html'" class="transition 
+                    ease-in-out 
+                    delay-150 
+                    hover:-translate-y-1 
+                    hover:scale-110 
+                    duration-700
+                    btn flex items-center justify-center  px-2 py-1 text-white transform bg-gradient-to-r from-cyan-500 to-purple-500 rounded-md focus:outline-none sm:w-auto sm:mx-1 hover:bg-blue-500 focus:bg-blue-500 focus:ring focus:ring-gray-900 focus:ring-opacity-40">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                    <span class="mx-1">
+                        View
+                    </span>
+                    </button>
+
+                </div>
+            </div>
+            <!-- card three end -->
+          
+        </div>
+    </div>
+
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="js/tailwind.js"></script>
+<script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
+
+</body>
+</body>
+</html>
