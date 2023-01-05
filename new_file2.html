@@ -10,7 +10,7 @@
     <style>
         .card-img {
             width: 30%;
-            border: 1px solid black;
+            /* border: 1px solid black; */
         }
         .card-img img {
             height: 100%;
@@ -18,20 +18,32 @@
         }
         .card-body {
             width: 70%;
-            border: 1px solid black;
+            /*border: 1px solid black; */
         }
+        .card {
+            max-width: 22rem/* 384px */;
+            width: auto;
+        }
+        .bg-gray-900 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+        }
+        .badge {
+            
+        }
+       
     </style>
 </head>
-<body>
-    <div class="container">
+<body class="bg-gray-900">
+    <div class="container flex justify-center">
         <div class="card mt-10">
 
             <div class="flex justify-center">
-                <div class="flex  border shadow-lg bg-white max-w-sm">
+                <div class="shadow-lg bg-white card flex justify-cente">
 
-                    <div class="relative card-img border flex justify-center">
+                    <div class="relative card-img flex justify-center">
                         <img class="object-cover" width="" src="/images/test.jpg" alt="Rounded avatar">
-                        <p class="absolute top-0 left-0 text-white font-medium font-sans text-center bg-violet-700">10</p>
+                        <p class="absolute top-0 left-0 text-white font-medium font-sans text-center badge bg-violet-700">10</p>
                     </div>
 
                     <div class="card-body relative">
@@ -40,7 +52,7 @@
                            #javascript #react js #tailwindcss
                         </p>
 
-                        <span class="absolute w-full bottom-0 text-[#14171A] block pl-4 bg-neutral-200 font-medium font-sans">
+                        <span class="absolute w-full bottom-0 text-[#14171A] block pl-4 py-1 bg-neutral-200 font-medium font-sans">
                             <i class="fa-brands fa-twitter text-[#00acee] pr-1"></i>
                             20.9k Followers
                         </span>
