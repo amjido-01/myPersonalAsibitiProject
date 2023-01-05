@@ -1030,6 +1030,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 50%;
 }
 
+.w-4\/5 {
+  width: 80%;
+}
+
 .max-w-5xl {
   max-width: 64rem;
 }
@@ -1048,6 +1052,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-sm {
   max-width: 24rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
 }
 
 .flex-shrink-0 {
@@ -2132,6 +2140,68 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(0 172 238 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#c34\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 51 68 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#c34f\] {
+  background-color: #c34f;
+}
+
+.bg-\[\#c34f5a\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(195 79 90 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#788\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(119 136 136 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#788402\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 132 2 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#feea\] {
+  background-color: #feea;
+}
+
+.bg-\[\#feea00\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 234 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#e59a\] {
+  background-color: #e59a;
+}
+
+.bg-\[\#e59a59\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 154 89 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#aab8c2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(170 184 194 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#e1e8ed\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(225 232 237 / var(--tw-bg-opacity));
+}
+
+.bg-indigo-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(67 56 202 / var(--tw-bg-opacity));
+}
+
+.bg-violet-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(109 40 217 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -2473,6 +2543,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.25rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2735,6 +2813,29 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#00acee\] {
   --tw-text-opacity: 1;
   color: rgb(0 172 238 / var(--tw-text-opacity));
+}
+
+.text-\[\#e59a\] {
+  color: #e59a;
+}
+
+.text-indigo-700 {
+  --tw-text-opacity: 1;
+  color: rgb(67 56 202 / var(--tw-text-opacity));
+}
+
+.text-violet-700 {
+  --tw-text-opacity: 1;
+  color: rgb(109 40 217 / var(--tw-text-opacity));
+}
+
+.text-\[\#1417\] {
+  color: #1417;
+}
+
+.text-\[\#14171A\] {
+  --tw-text-opacity: 1;
+  color: rgb(20 23 26 / var(--tw-text-opacity));
 }
 
 .underline {
