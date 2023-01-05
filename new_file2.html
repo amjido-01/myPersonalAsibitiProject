@@ -7,23 +7,40 @@
     <link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>twitter</title>
+    <style>
+        .card-img {
+            width: 30%;
+            border: 1px solid black;
+        }
+        .card-img img {
+            height: 100%;
+            object-fit: cover;
+        }
+        .card-body {
+            width: 70%;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="card mt-10">
+
             <div class="flex justify-center">
-                <div class="flex  border shadow-lg bg-white max-w-lg">
-                    <div class="relative border flex justify-center">
-                        <img class=" rounded-full w-1/2 object-cover" src="/images/male-avarta.jpg" alt="Rounded avatar">
-                        <p class="absolute top-0 left-0 text-white font-medium font-sans text-center bg-violet-700 h-6 w-6">10</p>
+                <div class="flex  border shadow-lg bg-white max-w-sm">
+
+                    <div class="relative card-img border flex justify-center">
+                        <img class="object-cover" width="" src="/images/test.jpg" alt="Rounded avatar">
+                        <p class="absolute top-0 left-0 text-white font-medium font-sans text-center bg-violet-700">10</p>
                     </div>
-                    <div class="">
+
+                    <div class="card-body relative">
                         <h5 class="text-[#14171A] text-xl pl-4 pt-3 leading-tight font-medium mb-2">@amjido_01</h5>
                         <p class="my-4 pl-4 text-violet-700 w-4/5 font-medium font-sans">
                            #javascript #react js #tailwindcss
                         </p>
 
-                        <span class="text-[#14171A] block pl-4 bg-neutral-200 font-medium font-sans">
+                        <span class="absolute w-full bottom-0 text-[#14171A] block pl-4 bg-neutral-200 font-medium font-sans">
                             <i class="fa-brands fa-twitter text-[#00acee] pr-1"></i>
                             20.9k Followers
                         </span>
